@@ -14,8 +14,7 @@
     "MixinServerWorld",
     "MixinTargetPredicate",
     "MixinVillagerEntity",
-    "MixinZombieVillagerEntity",
-    "MixinTranslatableText"
+    "MixinZombieVillagerEntity"
   ],
   "client": [
     "MixinClientPlayNetworkHandler",

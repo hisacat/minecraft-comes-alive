@@ -2,6 +2,7 @@ package mca.mixin.client;
 
 import java.util.Map;
 
+import mca.entity.ai.DialogueType;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -30,9 +31,13 @@ abstract class MixinTranslationStorage extends Language {
 
     @Inject(method = "get(Ljava/lang/String;)Ljava/lang/String;", at = @At("HEAD"), cancellable = true)
     private void onGet(String key, CallbackInfoReturnable<String> info) {
+        key = DialogueType.applyFallback(key);
+
         String unpooled = getPool().get(key);
         if (unpooled != null) {
             info.setReturnValue(unpooled);
+        } else {
+            info.setReturnValue(translations.getOrDefault(key, key));
         }
     }
 
