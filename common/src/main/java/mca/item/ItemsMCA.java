@@ -120,6 +120,8 @@ public interface ItemsMCA {
     Item CROSS_HEADSTONE = register("cross_headstone", new BlockItem(BlocksMCA.CROSS_HEADSTONE, baseProps()));
     Item WALL_HEADSTONE = register("wall_headstone", new BlockItem(BlocksMCA.WALL_HEADSTONE, baseProps()));
 
+    Item STRUCTURE_BLOCK = register("structure_block", new BlockItem(BlocksMCA.STRUCTURE_BLOCK, baseProps()));
+
     Item SCYTHE = register("scythe", new ScytheItem(baseProps()));
 
     static void bootstrap() {

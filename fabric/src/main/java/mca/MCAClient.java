@@ -4,10 +4,7 @@ import mca.block.BlockEntityTypesMCA;
 import mca.block.BlocksMCA;
 import mca.client.gui.FabricMCAScreens;
 import mca.client.particle.InteractionParticle;
-import mca.client.render.GrimReaperRenderer;
-import mca.client.render.TombstoneBlockEntityRenderer;
-import mca.client.render.VillagerEntityMCARenderer;
-import mca.client.render.ZombieVillagerEntityMCARenderer;
+import mca.client.render.*;
 import mca.entity.EntitiesMCA;
 import mca.item.BabyItem;
 import mca.item.ItemsMCA;
@@ -51,6 +48,7 @@ public final class MCAClient extends ClientProxyAbstractImpl implements ClientMo
         ParticleFactoryRegistry.getInstance().register(ParticleTypesMCA.POS_INTERACTION, InteractionParticle.Factory::new);
 
         BlockEntityRendererRegistry.register(BlockEntityTypesMCA.TOMBSTONE, TombstoneBlockEntityRenderer::new);
+        BlockEntityRendererRegistry.register(BlockEntityTypesMCA.STRUCTURE_BLOCK, StructureBlockEntityRenderer::new);
 
         ResourceManagerHelper.get(ResourceType.CLIENT_RESOURCES).registerReloadListener(new FabricMCAScreens());
         ResourceManagerHelper.get(ResourceType.CLIENT_RESOURCES).registerReloadListener(new FabricColorPaletteLoader());

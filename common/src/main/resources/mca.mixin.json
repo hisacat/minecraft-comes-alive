@@ -13,6 +13,7 @@
     "MixinProtoChunk",
     "MixinSensorType",
     "MixinServerWorld",
+    "MixinStructure",
     "MixinTargetPredicate",
     "MixinVillagerEntity",
     "MixinZombieVillagerEntity"

@@ -13,8 +13,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.registry.Registry;
 
 public interface BlockEntityTypesMCA {
-
     BlockEntityType<TombstoneBlock.Data> TOMBSTONE = register("tombstone", TombstoneBlock.Data::new, BlocksMCA.GRAVELLING_HEADSTONE, BlocksMCA.UPRIGHT_HEADSTONE, BlocksMCA.SLANTED_HEADSTONE, BlocksMCA.CROSS_HEADSTONE, BlocksMCA.WALL_HEADSTONE);
+    BlockEntityType<StructureBlockEntity> STRUCTURE_BLOCK = register("structure_block", StructureBlockEntity::new, BlocksMCA.STRUCTURE_BLOCK);
 
     static void bootstrap() {
     }

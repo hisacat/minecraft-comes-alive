@@ -23,6 +23,8 @@ public interface BlocksMCA {
     Block CROSS_HEADSTONE = register("cross_headstone", new TombstoneBlock(Block.Settings.copy(Blocks.STONE).nonOpaque(), 80, 15, new Vec3d(0, -13, 15),-45.0f, true, TombstoneBlock.CROSS_SHAPE));
     Block WALL_HEADSTONE = register("wall_headstone", new TombstoneBlock(Block.Settings.copy(Blocks.STONE).nonOpaque(), 100, 15, new Vec3d(0, -25, 40),0.0f, false, TombstoneBlock.WALL_SHAPE));
 
+    Block STRUCTURE_BLOCK = register("structure_block", new StructureBlock(Block.Settings.copy(Blocks.STONE).nonOpaque()));
+
     static void bootstrap() {
         TagsMCA.Blocks.bootstrap();
         BlockEntityTypesMCA.bootstrap();

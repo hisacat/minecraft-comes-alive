@@ -4,10 +4,7 @@ import mca.block.BlockEntityTypesMCA;
 import mca.block.BlocksMCA;
 import mca.client.gui.MCAScreens;
 import mca.client.particle.InteractionParticle;
-import mca.client.render.GrimReaperRenderer;
-import mca.client.render.TombstoneBlockEntityRenderer;
-import mca.client.render.VillagerEntityMCARenderer;
-import mca.client.render.ZombieVillagerEntityMCARenderer;
+import mca.client.render.*;
 import mca.client.resources.ColorPaletteLoader;
 import mca.cobalt.registration.RegistrationImpl;
 import mca.entity.EntitiesMCA;
@@ -63,6 +60,7 @@ public final class MCAClient {
         EntityRenderers.register(EntitiesMCA.GRIM_REAPER, GrimReaperRenderer::new);
 
         BlockEntityRendererFactories.register(BlockEntityTypesMCA.TOMBSTONE, TombstoneBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(BlockEntityTypesMCA.STRUCTURE_BLOCK, StructureBlockEntityRenderer::new);
 
         ModelPredicateProviderRegistry.register(ItemsMCA.BABY_BOY, new Identifier("invalidated"), (stack, world, entity, i) -> {
             return BabyItem.hasBeenInvalidated(stack) ? 1 : 0;
