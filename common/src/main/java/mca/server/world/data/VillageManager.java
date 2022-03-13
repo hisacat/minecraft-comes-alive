@@ -128,6 +128,10 @@ public class VillageManager extends PersistentStateCompat implements Iterable<Vi
         return findVillages(v -> v.isWithinBorder(p, margin)).min((a, b) -> (int)(a.getCenter().getSquaredDistance(p) - b.getCenter().getSquaredDistance(p)));
     }
 
+    public boolean isWithinHorizontalBoundaries(BlockPos p) {
+        return villages.values().stream().anyMatch(v -> v.getBox().expand(0, 1000, 0).contains(p));
+    }
+
     @Override
     public NbtCompound writeNbt(NbtCompound nbt) {
         nbt.putInt("lastBuildingId", lastBuildingId);
@@ -151,7 +155,7 @@ public class VillageManager extends PersistentStateCompat implements Iterable<Vi
         //send bounty hunters
         if (world.getTimeOfDay() % Config.getInstance().bountyHunterInterval / 10 == 0 && world.getDifficulty() != Difficulty.PEACEFUL) {
             world.getPlayers().forEach(player -> {
-                if (world.random.nextInt(10) == 0 && !PlayerSaveData.get(world, player.getUuid()).getLastSeenVillage(this).isPresent()) {
+                if (world.random.nextInt(10) == 0 && !isWithinHorizontalBoundaries(player.getBlockPos())) {
                     villages.values().stream()
                             .filter(v -> v.getReputation(player) < Config.getInstance().bountyHunterThreshold)
                             .min(Comparator.comparingInt(v -> v.getReputation(player)))
@@ -186,7 +190,7 @@ public class VillageManager extends PersistentStateCompat implements Iterable<Vi
             count *= 2;
         } else {
             //slightly increase your reputation
-            sender.pushHearts(player, sender.getPopulation() * 5);
+            sender.pushHearts(player, sender.getPopulation() * count);
         }
 
         //trigger advancement
