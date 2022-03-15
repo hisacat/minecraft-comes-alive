@@ -202,3 +202,7 @@
   * Added baby clothes
   * Fixed translations error on some modded things
 * Updated translations
+
+# 7.0.10
+* Fixed chests tag once again
+* Fixed bounty hunter issues
