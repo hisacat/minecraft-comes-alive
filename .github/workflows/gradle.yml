@@ -4,7 +4,7 @@ on: [ push ]
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: startsWith(github.ref, 'refs/tags/')
+    if: startsWith(github.ref, 'refs/tags/') # uncomment to execute build for every push
     steps:
       - uses: actions/checkout@v2
       - name: Set up JDK 8
@@ -31,18 +31,6 @@ jobs:
         if: ${{ success() && startsWith(github.ref, 'refs/tags/') }}
         id: tag
         uses: dawidd6/action-get-tag@v1
-      - name: "Upload Forge to CurseForge"
-        uses: itsmeow/curseforge-upload@v3
-        if: ${{ success() && startsWith(github.ref, 'refs/tags/') }}
-        with:
-          file_path: "forge/build/libs/minecraft-comes-alive-${{steps.tag.outputs.tag}}-forge.jar"
-          game_endpoint: "minecraft"
-          game_versions: "Minecraft 1.16:1.16.5,Java 8,Forge"
-          project_id: "535291"
-          token: "${{ secrets.CF_API_TOKEN }}"
-          changelog_type: "markdown"
-          changelog: "Full changelog can be found in the [GitHub Repo](https://github.com/Luke100000/minecraft-comes-alive/blob/1.16/changelog.md)"
-          release_type: "release"
       - name: "Upload Fabric to CurseForge"
         uses: itsmeow/curseforge-upload@v3
         if: ${{ success() && startsWith(github.ref, 'refs/tags/') }}
@@ -51,6 +39,18 @@ jobs:
           game_endpoint: "minecraft"
           relations: "fabric-api:requiredDependency"
           game_versions: "Minecraft 1.16:1.16.5,Java 8,Fabric"
+          project_id: "535291"
+          token: "${{ secrets.CF_API_TOKEN }}"
+          changelog_type: "markdown"
+          changelog: "Full changelog can be found in the [GitHub Repo](https://github.com/Luke100000/minecraft-comes-alive/blob/1.16/changelog.md)"
+          release_type: "release"
+      - name: "Upload Forge to CurseForge"
+        uses: itsmeow/curseforge-upload@v3
+        if: ${{ success() && startsWith(github.ref, 'refs/tags/') }}
+        with:
+          file_path: "forge/build/libs/minecraft-comes-alive-${{steps.tag.outputs.tag}}-forge.jar"
+          game_endpoint: "minecraft"
+          game_versions: "Minecraft 1.16:1.16.5,Java 8,Forge"
           project_id: "535291"
           token: "${{ secrets.CF_API_TOKEN }}"
           changelog_type: "markdown"
