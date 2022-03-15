@@ -9,10 +9,10 @@ jobs:
     if: startsWith(github.ref, 'refs/tags/') # uncomment to execute build for every push
     steps:
       - uses: actions/checkout@v2
-      - name: Set up JDK 8
+      - name: Set up JDK 17
         uses: actions/setup-java@v1
         with:
-          java-version: 8
+          java-version: 17
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
       - name: Build with Gradle - Forge
