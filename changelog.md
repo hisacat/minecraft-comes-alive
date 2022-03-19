@@ -218,3 +218,8 @@
 * Fixed UI Scaling issues with interaction buttons
 * Fixed issues of bounty hunters spawning within villages if your y value is below its bounds
 * Added Village Merging
+* Fixed villagers struck by lighting
+* Added electrified trait
+* Increased button widths to better support different languages
+* Decrease revenge aggression based on the guards' relation to you
+* Added guard target list to config
