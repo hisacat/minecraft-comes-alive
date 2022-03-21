@@ -212,3 +212,4 @@
 
 * Fixed spawning witches (LTS backport)
 * Added electrified trait (LTS backport)
+* Updated lang files and fixed issue #121
