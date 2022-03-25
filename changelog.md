@@ -197,12 +197,18 @@
 # 7.0.9
 
 * Backported LTS fixes frm 1.18
-  * Fixed missing chest tag
-  * Fixed incompatibility with eldritch mobs
-  * Added baby clothes
-  * Fixed translations error on some modded things
+    * Fixed missing chest tag
+    * Fixed incompatibility with eldritch mobs
+    * Added baby clothes
+    * Fixed translations error on some modded things
 * Updated translations
 
 # 7.0.10
+
 * Fixed chests tag once again
 * Fixed bounty hunter issues
+
+# 7.0.11
+
+* Fixed spawning witches (LTS backport)
+* Added electrified trait (LTS backport)
