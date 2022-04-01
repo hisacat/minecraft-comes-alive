@@ -7,11 +7,14 @@
   "reaction.ranaway/6": "왜 도망치는 거야? 한 대 더 치게 다시 이리 와!",
   "reaction.ranaway/7": "다시 보게 된다면 너를 쥐어박을 거야!",
   "reaction.ranaway/8": "친구들을 데려 와서 너를 때려눕힐 거야!",
-  "villager.warning/1": "I'm warning you, don't attack our people!",
+  
+  "villager.warning/1": "경고하는데, 마을 사람들을 공격하지 마!",
   "villager.warning/2": "Last warning!",
   "villager.warning/3": "That's enough!",
   "villager.warning/4": "You have been warned!",
+  
   "villager.baby_hit/0": "You can't hit a baby!",
+  
   "villager.hurt/1": "아! 아파!",
   "villager.hurt/2": "복수할 거야!",
   "villager.hurt/3": "아야! 왜 날 때린거야?",
@@ -19,6 +22,7 @@
   "villager.hurt/5": "아! 진짜 아파!",
   "villager.hurt/6": "야! 너가 뭘하고 있는지는 아냐?!",
   "villager.hurt/7": "*아*! 실수였다면 좋을 텐데!",
+  
   "villager.badly_hurt/1": "No! Please don't hurt me!",
   "villager.badly_hurt/2": "Stop! No!",
   "villager.badly_hurt/3": "Someone help me!",
@@ -26,6 +30,7 @@
   "villager.badly_hurt/5": "You can take whatever you want, just please don't hurt me!",
   "villager.badly_hurt/6": "I don't want to die! Stay away!",
   "villager.badly_hurt/7": "Mother Notch, please help me!",
+  
   "villager.sickness/1": "의사 선생님, 몸이 아픈 것 같아요...",
   "villager.sickness/2": "*콜록콜록*",
   "villager.sickness/3": "*허억*",
@@ -34,6 +39,7 @@
   "villager.sickness/6": "아버지...? 아버지 당신인가요?",
   "villager.sickness/7": "*에취*",
   "villager.sickness/8": "제발 꿈이라고 말해줘... *콜록*",
+  
   "villager.bitten/1": "아!! 나 물렸어!",
   "villager.bitten/2": "좀비! 세상에, 좀비다!",
   "villager.bitten/3": "도망쳐어어어!",
@@ -42,6 +48,7 @@
   "villager.bitten/6": "도와줘! 도와줘!",
   "villager.bitten/7": "역겨워!",
   "villager.bitten/8": "저리 가! 저리 가!",
+  
   "villager.scream/1": "아아아아아아아!",
   "villager.scream/2": "아아아아아아아아아아!",
   "villager.scream/3": "으아아아아아아아아아아아아ㅏㅏㅏㅏㅏㅏ!!!!!!",
@@ -51,6 +58,7 @@
   "villager.scream/7": "저리 가! 저리 가!",
   "villager.scream/8": "이크!",
   "villager.scream/9": "이익!",
+  
   "villager.attack/1": "For honor!",
   "villager.attack/2": "We are under attack!",
   "villager.attack/3": "Attack!",
@@ -60,6 +68,7 @@
   "villager.attack/7": "Intruder!",
   "villager.attack/8": "Trespasser!",
   "villager.attack/9": "Stop right here, criminal scum!",
+  
   "villager.retreat/1": "They are too many!",
   "villager.retreat/2": "Retreat! Retreat!",
   "villager.retreat/3": "They are overrunning us!",
@@ -69,14 +78,17 @@
   "villager.retreat/7": "I need backup!",
   "villager.retreat/8": "We are loosing!",
   "villager.retreat/9": "I'm hit!",
+  
   "villager.inventory.full/1": "더 이상 짊어질 수 없어",
   "villager.inventory.full/2": "더 이상 빈 손이 없어, 미안",
   "villager.inventory.full/3": "*윽* 난 못 해. 더는 안 돼...",
   "villager.inventory.full/4": "하나도 더 들 수 없어!!",
+  
   "adult.gift.saturated/1": "이런 거 더는 말고!",
   "child.gift.saturated/1": "이미 이런 건 많아요!",
   "childp.gift.saturated/1": "이미 이런 건 많아요!",
   "spouse.gift.saturated/1": "여보, 우리 이런 건 많잖아!",
+  
   "spouse.chore.mining.orenotify": "There's some %2$s nearby...",
   "spouse.chore.mining.nopick": "I forgot my pickaxe, dear, did you bring an extra one?",
   "spouse.chore.chopping.noaxe": "Oh, I thought we were going for a picnic. I didn't bring an axe...",
@@ -101,6 +113,7 @@
   "adult.chore.fishing.norod": "I don't have a fishing rod anymore.",
   "adult.chore.hunting.nosword": "I lost my sword! Do you have another?",
   "adult.chore.harvesting.nohoe": "수확할 괭이가 없어요.",
+  
   "child.interaction.marry.fail.isbaby": "You are trying to marry a kid... what?",
   "spouse.interaction.marry.fail.marriedtogiver/1": "It's a pretty ring, but I am already married to you, silly.",
   "spouse.interaction.marry.fail.marriedtogiver/2": "We are already married. Did you forget?",
@@ -187,23 +200,29 @@
   "spouse.interaction.procreate.fail.lostbaby/3": "That is the last time I search for our baby!",
   "spouse.interaction.procreate.fail.lowhearts/1": "Spend more time with me! I'm not ready for a child.",
   "spouse.interaction.procreate.fail.lowhearts/2": "Hmm...not just yet. I think we need to spend more time together first.",
+  
   "interaction.adopt.success": "That's my happiest day of my life!",
+  
   "adult.welcome/1": "Welcome back, %1$s!",
   "child.welcome/1": "Hi %1$s!",
   "childp.welcome/1": "Hi %1$s!",
   "spouse.welcome/1": "Welcome home Darling!",
   "welcomeFoe/1": "Not you again!",
+  
   "armor.enabled": "Okay, I will always wear my armor. If I have any.",
   "armor.disabled": "Fine, I will only wear my armor in case we are under attack.",
+  
   "profession.set.none": "Alright, I will find myself a job soon.",
   "profession.set.guard": "I am honored to serve as a guard protecting this village.",
   "profession.set.archer": "I will join the defense of the village as an archer.",
+  
   "adult.gift.cake.success/1": "What's this? A cake? Oh...oh my. I...need to find my spouse.",
   "adult.gift.cake.success/2": "케이크네요! 고마워요! 저... 잠깐, 이 이상한 느낌은 뭐지?",
   "adult.gift.cake.success/3": "Finally, something that will help my marriage...",
   "adult.gift.cake.fail/1": "케익은 더 필요하지 않을것 같지만, 감사합니다.",
   "adult.gift.cake.fail/2": "괜찮아요, 전 이제 케이크를 더 먹고싶진 않네요",
   "adult.gift.cake.fail/3": "Oh, no. I couldn't.",
+  
   "gift.confectionary.fail/1": "I don't have much of a sweet tooth",
   "gift.confectionary.fail/2": "I'm sure the baker would like this better.",
   "gift.confectionary.good/1": "Thanks I guess",
@@ -215,16 +234,21 @@
   "child.gift.confectionary.fail": "Mommy said I can't have any sweets...",
   "child.gift.confectionary.best/1": "Yummy!",
   "child.gift.confectionary.best/2": "Oh wow!",
+  
   "gift.gluten.fail": "There is gluten in it! Do you want me to have diarrhea for the rest of the year?",
+  
   "gift.meats.fail/1": "That poor animal!",
   "gift.meats.fail/2": "You know that I hate meat!",
+  
   "gift.lactose.fail": "Sorry, but I am lactose intolerant.",
   "gift.flowers.fail": "I'm allergic. Sorry.",
+  
   "gift.flowers.good/1": "What a lovely flower.",
   "gift.flowers.good/2": "I hope you didn't pick that from my garden",
   "gift.flowers.better": "It's beautiful.",
   "gift.flowers.best/1": "Thank you",
   "gift.flowers.best/2": "*gasp* That's my favourite kind!",
+  
   "gift.fish.fail/1": "A... fish?",
   "gift.fish.fail/2": "This is strange even for you.",
   "gift.fish.fail/3": "A fish. You gave me. A fish. Why?",
@@ -234,8 +258,10 @@
   "gift.fish.best/1": "Wow!",
   "gift.fish.best/2": "This is just what I needed!",
   "gift.fish.best/3": "FOOOOD!",
+  
   "colors.fail": "I'm blind. What am I supposed to do with this?",
   "colors.success": "Oh, so colorful!",
+  
   "gift.weapons.fail/1": "I don't think I can, sorry",
   "gift.weapons.fail/2": "That looks dangerous...",
   "gift.weapons.fail/3": "You should speak to a guard.",
@@ -245,6 +271,7 @@
   "gift.weapons.success/1": "Your town thanks you, citizen.",
   "gift.weapons.success/2": "To victory!",
   "gift.weapons.success/3": "I will sharpen it well, adventurer.",
+  
   "gift.plant.fail/1": "It's lovely, but I don't know what to do with it.",
   "gift.plant.fail/2": "Why don't you give this to the farmer?",
   "gift.plant.fail/3": "I can't use that.",
@@ -254,6 +281,7 @@
   "gift.plant.best/2": "This is just what I needed!",
   "gift.plant.best/3": "고마워!",
   "gift.plant.best/4": "This will fit perfectly next to the shrubs.",
+  
   "adult.gift.fail/1": "This isn't a good gift...",
   "adult.gift.fail/2": "What made you think that I would like this?",
   "adult.gift.fail/3": "No thanks.",
@@ -275,6 +303,7 @@
   "adult.gift.best/3": "Oh wow, I've always wanted one of these!",
   "adult.gift.best/4": "This is fantastic! I'll put it to good use.",
   "adult.gift.best/5": "Thank you so much. I will remember this forever.",
+  
   "child.gift.fail/1": "으, 끔찍해!",
   "child.gift.fail/2": "웩! 필요없어.",
   "child.gift.fail/3": "왜 이걸 나에게 가져다 줬어? 끔찍해!",
@@ -326,12 +355,15 @@
   "childp.gift.best/3": "예이! 난 세상에서 가장 최고의 %1$s를(을) 뒀어!",
   "childp.gift.best/4": "진짜 놀라워! 이게 다 내거라는게 믿겨지지가 않아!",
   "childp.gift.best/5": "정말 고마워, %1$s! 넌 역시 최고야!",
+  
   "spouse.endmarriage/1": "I've had it. You don't treat me well enough. I'm leaving you!",
   "spouse.endmarriage/2": "I'm leaving. Forever! Don't look for me.",
   "spouse.endmarriage/3": "I'm sorry - I thought we could work things out, but it's not working for me. Goodbye.",
   "spouse.endmarriage/4": "%1$s, 이건 이별이야, 더이상 연락하지 말아줘.",
+  
   "spouse.divorce/1": "I hate you, %1$s!",
   "spouse.divorcePaper/1": "알았어..",
+  
   "adult.dialogue.main/1": "Why, hello there!",
   "adult.dialogue.main/2": "Hey! How are you today?",
   "adult.dialogue.main/3": "Hey, good to see you!",
@@ -349,6 +381,7 @@
   "childp.dialogue.main/2": "Hey, what's going on?",
   "childp.dialogue.main/3": "What are you doing?",
   "childp.dialogue.main/4": "Where are you going?",
+  
   "dialogue.main.chat": "chat",
   "dialogue.main.joke": "tell joke",
   "dialogue.main.greet": "greet",
@@ -360,6 +393,7 @@
   "dialogue.main.adopt": "adopt",
   "dialogue.main.divorceInitiate": "divorce",
   "dialogue.main.divorcePapers": "divorce papers",
+  
   "adult.dialogue.hug.success/1": "오랜만이야!",
   "adult.dialogue.hug.success/2": "Thank you, I needed that.",
   "adult.dialogue.hug.success/3": "At least one thing made my day today.",
@@ -388,6 +422,7 @@
   "childp.dialogue.hug.fail/3": "Go away, you're so annoying!",
   "childp.dialogue.hug.fail/4": "날 혼자 두든가 쿠키 좀 줘봐요.",
   "childp.dialogue.hug.fail/5": "I'd rather hug a skeleton.",
+  
   "adult.dialogue.kiss.success/1": "I wish this moment would last forever.",
   "adult.dialogue.kiss.success/2": "I think I love you...",
   "adult.dialogue.kiss.success/3": "Mmm, tastes like pumpkin pie!",
@@ -406,6 +441,7 @@
   "spouse.dialogue.kiss.fail/3": "Your breath smells like wolf kibble.",
   "spouse.dialogue.kiss.fail/4": "연못가서 마실 음료수 하나 챙겨와.",
   "spouse.dialogue.kiss.fail/5": "Now that we're married I can tell you how lousy you are at kissing.",
+  
   "adult.dialogue.chat.success/1": "Man, cookies and milk does sound delicious right now.",
   "adult.dialogue.chat.success/2": "Yes, I suppose the weather is nice today.",
   "adult.dialogue.chat.success/3": "I'm doing just fine! Hit my toe when I woke up, though.",
@@ -447,6 +483,7 @@
   "childp.dialogue.chat.fail/3": "Is that why %1$s talked about this thing called \"divorce?\"",
   "childp.dialogue.chat.fail/4": "I want new parents.",
   "childp.dialogue.chat.fail/5": "난 가정부가 필요없어.",
+  
   "adult.dialogue.story.success/1": "정말? 난 모든 일들이 믿겨지지 않아!",
   "adult.dialogue.story.success/2": "I wish I was brave enough to take on a creeper.",
   "adult.dialogue.story.success/3": "That was a really good story! Is it original?",
@@ -490,6 +527,7 @@
   "childp.dialogue.story.fail/3": "%1$s has been lying to you, too.",
   "childp.dialogue.story.fail/4": "넌 분명히 케익과 쿠키를 먹지 안겠다고 말했어.",
   "childp.dialogue.story.fail/5": "난 누군가 널 나쁜 사람이라고 얘기하는걸 믿었어!",
+  
   "adult.dialogue.flirt.success/1": "You're sooo brave!",
   "adult.dialogue.flirt.success/2": "Oh, you! Stop being so cute!",
   "adult.dialogue.flirt.success/3": "*Blushes* Do you mean it?",
@@ -510,19 +548,24 @@
   "spouse.dialogue.flirt.fail/3": "We're married, we don't have to do this anymore.",
   "spouse.dialogue.flirt.fail/4": "Talk to the tree, it cares more.",
   "spouse.dialogue.flirt.fail/5": "알았어, 알았어.. 너가 말하던게 뭐였지?",
+  
   "dialogue.joke": "(what joke should I tell?)",
   "dialogue.joke.skeleton": "skeleton one (very hard)",
   "dialogue.joke.sheep": "sheep wool one (hard)",
   "dialogue.joke.pig": "pig joke",
   "dialogue.joke.creative": "be creative (easy)",
+  
   "dialogue.joke.skeleton.success": "Haha! Serves that Skelly right!",
   "dialogue.joke.skeleton.failed": "Skeletons are sentient beings! How dare you!",
+  
   "dialogue.joke.sheep.success/1": "Unfortunate for the sheep to lose its wool, but funny!",
   "dialogue.joke.sheep.success/2": "Then the wolf fell in love with the sheep.",
   "dialogue.joke.sheep.failed/1": "That poor sheep! That's not funny at all!",
+  
   "dialogue.joke.pig.success": "You shouldn't joke about that.",
   "dialogue.joke.pig.failed/1": "내 돼지를 가지고 그렇게 말하지 마!",
   "dialogue.joke.pig.failed/2": "That's low.",
+  
   "dialogue.joke.creative.success/1": "*Laughs* That's hilarious!",
   "dialogue.joke.creative.success/2": "That's funny!",
   "dialogue.joke.creative.success/3": "내가 들은것중 제일 재미있었어!",
@@ -558,14 +601,17 @@
   "childp.dialogue.joke.creative.fail/3": "I don't get it, that was dumb.",
   "childp.dialogue.joke.creative.fail/4": "*Yawn* My friend's dad is cooler and funnier than you.",
   "childp.dialogue.joke.creative.fail/5": "I'd rather have cake.",
+  
   "dialogue.greet": "Hey! How are you doing today?",
   "dialogue.greet.short": "I'm good.",
   "dialogue.greet.kind": "I'm good, how are you?",
   "dialogue.greet.sad": "Not doing too well.",
+  
   "dialogue.greet.fail/1": "Hmm.",
   "dialogue.greet.fail/2": "그렇군요...",
   "dialogue.greet.chitchat/1": "오, 좋은 일이네요!",
   "dialogue.greet.getBetter/1": "와! 너가 무슨 일을 하든 나아졌으면 좋겠어",
+  
   "adult.shake_hand.success/1": "고마워!",
   "adult.shake_hand.success/2": "너 덕에 힘이 나네!",
   "adult.shake_hand.success/3": "와우, 너 정말 예의바르구나!",
@@ -606,14 +652,18 @@
   "childp.shake_hand.fail/3": "오직 패배자만 악수를 해",
   "childp.shake_hand.fail/4": "너가 케이크를 주면 악수할게",
   "childp.shake_hand.fail/5": "안 돼, 미끄러져서 날 때릴 거야.",
+
   "dialogue.divorce": "정말 이혼을 원하나요? 성직자는 처벌을 줄이기 위해 이혼 서류를 제공할 수 있습니다.",
   "dialogue.divorce.confirm": "확인",
   "dialogue.divorce.cancel": "취소",
+
   "dialogue.procreate": "정말 아이를 원하시나요?",
   "dialogue.procreate.confirm": "확인",
   "dialogue.procreate.cancel": "취소",
+
   "dialogue.adopt": "당신은 정말 나의 부모님이 되고 싶나요?",
   "dialogue.adopt.confirm": "확인",
   "dialogue.adopt.cancel": "취소",
+
   "dialogue.divorcePapers": "자 여기요, 이혼을 확인하기 위해 이 서류들을 배우자에게 갖다 주세요."
 }
