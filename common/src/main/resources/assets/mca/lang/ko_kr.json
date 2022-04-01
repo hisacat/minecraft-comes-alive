@@ -25,14 +25,14 @@
   "item.mca.scythe.tooltip": "주민을 죽이고 영혼을 거두어들이세요, 묘비에 우클릭하여 되살리세요. 하지만 조심하세요, 죽은 주민은 언데드로 부활할 것입니다.",
   
   "item.mca.wedding_ring": "결혼 반지",
-  "item.mca.wedding_ring.tooltip": "누군가와의 하트가 충분히 찬 경우 이것을 가지고 결혼할 수 있습니다.",
+  "item.mca.wedding_ring.tooltip": "누군가와의 호감도가 충분히 찬 경우 이것을 가지고 결혼할 수 있습니다.",
   "item.mca.wedding_ring_rg": "로즈골드 결혼 반지",
-  "item.mca.wedding_ring_rg.tooltip": "(RG) 누군가와의 하트가 충분히 찬 경우 이것을 가지고 결혼할 수 있습니다.",
+  "item.mca.wedding_ring_rg.tooltip": "(RG) 누군가와의 호감도가 충분히 찬 경우 이것을 가지고 결혼할 수 있습니다.",
   
   "item.mca.engagement_ring": "약혼 반지",
-  "item.mca.engagement_ring.tooltip": "결혼하려면 하트 절반이 필요합니다.",
+  "item.mca.engagement_ring.tooltip": "결혼하려면 호감도 절반이 필요합니다.",
   "item.mca.engagement_ring_rg": "로즈골드 약혼 반지",
-  "item.mca.engagement_ring_rg.tooltip": "(RG) 결혼하려면 하트 절반이 필요합니다.",
+  "item.mca.engagement_ring_rg.tooltip": "(RG) 결혼하려면 호감도 절반이 필요합니다.",
   
   "item.mca.matchmakers_ring": "결혼 주선자의 반지",
   
@@ -93,7 +93,7 @@
   "analysis.base": "기초",
   "analysis.desaturation": "채도 낮추기",
   "analysis.luck": "행운",
-  "analysis.heartsBonus": "하트 보너스",
+  "analysis.heartsBonus": "호감도 보너스",
   "analysis.fatigue": "피로",
   "analysis.total": "총 합계:",
   "analysis.profession": "직업",
@@ -169,13 +169,13 @@
   "personalityDescription.athletic": "더 빨리 달림",
   "personalityDescription.confident": "공격력이 더 높음",
   "personalityDescription.strong": "공격력이 훨씬 더 높음",
-  "personalityDescription.friendly": "상호작용 시 보너스 하트가 있음",
+  "personalityDescription.friendly": "상호작용 시 보너스 호감도가 있음",
   "personalityDescription.tough": "방어력이 더 높음",
   "personalityDescription.curious": "이야기를 좋아함",
   "personalityDescription.peaceful": "체력이 가득 찬 상태에서는 공격하지 않음",
   "personalityDescription.flirty": "특정 상호작용 시 보너스 포인트가 있음",
   "personalityDescription.witty": "농담을 좋아함",
-  "personalityDescription.sensitive": "상호작용 실패 시 하트 패널티가 2배가 됨",
+  "personalityDescription.sensitive": "상호작용 실패 시 호감도 패널티가 2배가 됨",
   "personalityDescription.greedy": "심부름을 성실히 하지 않음",
   "personalityDescription.stubborn": "대화하기 어려움",
   "personalityDescription.odd": "개인 공간에 들어갈 때 성공 확률이 낮음",
@@ -266,7 +266,7 @@
   "buildingType.infirmary": "병원",
   "buildingType.infirmary.description": "감염 확률 50% 감소! 병든 마을 사람들이 이곳으로 모입니다.",
   
-  "task.reputation": "평균 하트 %1$s에 도달",
+  "task.reputation": "평균 호감도 %1$s에 도달",
   "task.population": "인구 %1$s명에 도달",
   "task.build": "%1$s 건설",
   "task.grimReaper": "사신 죽이기",
@@ -528,7 +528,7 @@
   "advancement.mca.baby.description": "첫 아이를 가지세요",
   
   "advancement.mca.best_friend": "절친",
-  "advancement.mca.best_friend.description": "하트 200에 도달하세요",
+  "advancement.mca.best_friend.description": "호감도 200에 도달하세요",
   
   "advancement.mca.excellent_gift": "딱 내가 원하던 그거",
   "advancement.mca.excellent_gift.description": "완벽한 선물을 주세요",
@@ -537,7 +537,7 @@
   "advancement.mca.family.description": "주민과 가정을 이루세요",
   
   "advancement.mca.friend": "우정을 찾아서",
-  "advancement.mca.friend.description": "하트 50에 도달하세요",
+  "advancement.mca.friend.description": "호감도 50에 도달하세요",
   
   "advancement.mca.grandparent": "나 때는 말이야...",
   "advancement.mca.grandparent.description": "할아버지가 되세요",
