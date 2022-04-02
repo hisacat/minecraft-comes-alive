@@ -439,7 +439,7 @@
   "server.procreationRequest": "%1$s님께서 아이 만들기를 요청하셨습니다. 수락하려면 명령어 /mca procreate를 10초 이내에 입력하세요.",
   "server.marriedToVillager": "주민과 결혼한 상태에서는 이 명령을 사용할 수 없습니다.",
   "server.babyPresent": "당신은 이미 상대와의 아기를 가지고 있습니다.",
-  "server.babyLost": "Stop loosing the baby! Here, I retrieved it for you.",
+  "server.babyLost": "아기 좀 그만 버리세요! 여기, 제가 당신을 위해 되찾아왔습니다.",
   "server.notMarried": "당신은 결혼 중이 아니므로 아이 만들기를 할 수 없습니다.",
   "server.alreadyMarried": "이미 결혼한 상태에서는 결혼 요청을 보낼 수 없습니다.",
   "server.proposedToYourself": "자기 자신에게는 결혼 요청을 보낼 수 없습니다.",
@@ -519,7 +519,7 @@
   "advancement.mca.baby_smelted": "당신은 괴물이야!",
   "advancement.mca.baby_smelted.description": "비정상적인 방법으로 아이를 유산시키세요",
   "notify.spouseendedmarriage": "%1$s이(가) 당신과의 결혼 생활을 끝냈습니다.",
-  "notify.child.grownup": "%1$s has grown into an adult!",
+  "notify.child.grownup": "%1$s이(가) 자라서 어른이 되었습니다!",
   "notify.revival.disabled": "서버 관리자에 의해 부활이 비활성화되었습니다.",
   "notify.trading.disabled": "서버 관리자에 의해 거래가 비활성화되었습니다.",
   "notify.playerMarriage.disabled": "서버 관리자에 의해 플레이어간의 결혼이 비활성화되었습니다."
