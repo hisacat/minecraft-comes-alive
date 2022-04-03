@@ -370,7 +370,7 @@
   "gui.label.following": "따라오는 중",
   "gui.info.gift.line.1": "선물이 있음",
   "gui.info.gift.line.2": "(받으려면 클릭)",
-  "gui.interact.label.married": "%1$s와 결혼",
+  "gui.interact.label.married": "%1$s와(과) 결혼",
   "gui.interact.label.engaged": "%1$s과 약혼",
   "gui.interact.label.notmarried": "미혼",
   "gui.interact.label.widow": "과부",
