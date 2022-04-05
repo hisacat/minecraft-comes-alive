@@ -80,11 +80,7 @@ public class ChoppingTask extends AbstractChoreTask {
 
             // valid "trees" are logs on the ground with leaves around them
             nearbyLogs.stream()
-                    .filter(log -> {
-                        BlockState down = world.getBlockState(log.down());
-                        List<BlockPos> leaves = TaskUtils.getNearbyBlocks(log, world, (blockState -> blockState.isIn(BlockTags.LEAVES)), 1, 5);
-                        return leaves.size() > 0 && (down.getBlock() == Blocks.GRASS_BLOCK || down.getBlock() == Blocks.DIRT);
-                    })
+                    .filter(log -> isTreeStartLog(world, log))
                     .forEach(nearbyTrees::add);
             targetTree = TaskUtils.getNearestPoint(villager.getBlockPos(), nearbyTrees);
             return;
@@ -105,6 +101,31 @@ public class ChoppingTask extends AbstractChoreTask {
             }
         } else targetTree = null;
         super.keepRunning(world, villager, time);
+    }
+
+    private final static int TREE_LOGS_MAX_HEIGHT = 10; //and 30(about logs) is max height of largest trees
+
+    /**
+     * Returns trues if origin is bottom point of tree.
+     */
+    private static boolean isTreeStartLog(ServerWorld world, BlockPos origin) {
+        if (!world.getBlockState(origin).isIn(BlockTags.LOGS))
+            return false;
+
+        // valid trees placed on grass or dirt
+        BlockState down = world.getBlockState(origin.down());
+        if (down.getBlock() != Blocks.GRASS_BLOCK && down.getBlock() != Blocks.DIRT)
+            return false;
+
+        // check upside continues and valid leaves exist.
+        BlockPos.Mutable pos_up = origin.mutableCopy(); // copy as mutable for reduce resources
+        for (int y = 0; y < TREE_LOGS_MAX_HEIGHT; y++) {
+            BlockState up = world.getBlockState(pos_up.setY(pos_up.getY() + 1)); // use set directly instead of "pos_up.move(Direction.UP)" (set is faster)
+            if (up.isIn(BlockTags.LOGS)) continue;
+            else if (up.isIn(BlockTags.LEAVES)) return true;
+            else return false;
+        }
+        return false;
     }
 
     private void destroyTree(ServerWorld world, BlockPos origin, Block log) {
