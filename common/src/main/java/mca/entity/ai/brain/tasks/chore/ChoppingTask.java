@@ -103,7 +103,7 @@ public class ChoppingTask extends AbstractChoreTask {
         super.keepRunning(world, villager, time);
     }
 
-    private final static int TREE_LOGS_MAX_HEIGHT = 10; //and 30(about logs) is max height of largest trees
+    private final static int TREE_LOGS_MAX_HEIGHT = 8; //and 30(about logs) is max height of largest trees
 
     /**
      * Returns trues if origin is bottom point of tree.
