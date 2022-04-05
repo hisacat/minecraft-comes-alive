@@ -1,6 +1,7 @@
 package mca.entity.ai.brain.tasks.chore;
 
 import com.google.common.collect.ImmutableMap;
+import mca.Config;
 import mca.entity.VillagerEntityMCA;
 import mca.entity.ai.Chore;
 import mca.entity.ai.TaskUtils;
