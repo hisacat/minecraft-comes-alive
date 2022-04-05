@@ -103,8 +103,6 @@ public class ChoppingTask extends AbstractChoreTask {
         super.keepRunning(world, villager, time);
     }
 
-    private final static int TREE_LOGS_MAX_HEIGHT = 8; //and 30(about logs) is max height of largest trees
-
     /**
      * Returns trues if origin is bottom point of tree.
      */
@@ -119,7 +117,8 @@ public class ChoppingTask extends AbstractChoreTask {
 
         // check upside continues and valid leaves exist.
         BlockPos.Mutable pos_up = origin.mutableCopy(); // copy as mutable for reduce resources
-        for (int y = 0; y < TREE_LOGS_MAX_HEIGHT; y++) {
+        int maxTreeHeight = Config.getInstance().maxTreeHeightForChopping;
+        for (int y = 0; y < maxTreeHeight; y++) {
             BlockState up = world.getBlockState(pos_up.setY(pos_up.getY() + 1)); // use set directly instead of "pos_up.move(Direction.UP)" (set is faster)
             if (up.isIn(BlockTags.LOGS)) continue;
             else if (up.isIn(BlockTags.LEAVES)) return true;
