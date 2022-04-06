@@ -7,6 +7,7 @@ import mca.entity.VillagerEntityMCA;
 import mca.entity.ai.Chore;
 import mca.entity.ai.TaskUtils;
 import mca.util.InventoryUtils;
+import mca.util.NonePlayerItemUsageContext;
 import net.minecraft.block.*;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.ai.brain.MemoryModuleState;
@@ -226,19 +227,6 @@ public class HarvestingTask extends AbstractChoreTask {
         return ITEM_FOUND;
     }
 
-    private Constructor<?> itemUsageContextconstructors = null;
-
-    private ItemUsageContext instantiateItemUsageContext(World world, @Nullable PlayerEntity player, Hand hand, ItemStack stack, BlockHitResult hit) {
-        try {
-            if (itemUsageContextconstructors == null)
-                itemUsageContextconstructors = ItemUsageContext.class.getConstructor(World.class, PlayerEntity.class, Hand.class, ItemStack.class, BlockHitResult.class);
-            return (ItemUsageContext) itemUsageContextconstructors.newInstance(world, player, hand, stack, hit);
-        } catch (Throwable e) {
-            e.printStackTrace();
-            return null;
-        }
-    }
-
     private void plantSeeds(ServerWorld world, VillagerEntityMCA villager, BlockPos target) {
         BlockHitResult hitResult = new BlockHitResult(
                 Vec3d.ofBottomCenter(target),
@@ -249,7 +237,7 @@ public class HarvestingTask extends AbstractChoreTask {
 
         ActionResult result = InventoryUtils.stream(villager.getInventory())
                 .filter(stack -> !stack.isEmpty() && stack.getItem() instanceof BlockItem && stack.isIn(TagsMCA.Items.VILLAGER_PLANTABLE))
-                .map(stack -> stack.useOnBlock(instantiateItemUsageContext(world, null, Hand.MAIN_HAND, stack, hitResult)))
+                .map(stack -> stack.useOnBlock(new NonePlayerItemUsageContext(world, Hand.MAIN_HAND, stack, hitResult)))
                 .filter(ActionResult::isAccepted)
                 .findFirst()
                 .orElse(ActionResult.FAIL);
