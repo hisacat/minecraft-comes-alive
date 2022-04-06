@@ -11,6 +11,7 @@ import net.minecraft.block.*;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.ai.brain.MemoryModuleState;
 import net.minecraft.entity.ai.brain.MemoryModuleType;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.BoneMealItem;
@@ -29,7 +30,10 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec3d;
+import net.minecraft.world.World;
 
+import javax.annotation.Nullable;
+import java.lang.reflect.Constructor;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
@@ -222,20 +226,33 @@ public class HarvestingTask extends AbstractChoreTask {
         return ITEM_FOUND;
     }
 
+    private Constructor<?> itemUsageContextconstructors = null;
+
+    private ItemUsageContext instantiateItemUsageContext(World world, @Nullable PlayerEntity player, Hand hand, ItemStack stack, BlockHitResult hit) {
+        try {
+            if (itemUsageContextconstructors == null)
+                itemUsageContextconstructors = ItemUsageContext.class.getConstructor(World.class, PlayerEntity.class, Hand.class, ItemStack.class, BlockHitResult.class);
+            return (ItemUsageContext) itemUsageContextconstructors.newInstance(world, player, hand, stack, hit);
+        } catch (Throwable e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
     private void plantSeeds(ServerWorld world, VillagerEntityMCA villager, BlockPos target) {
-        ItemUsageContext context = new ItemUsageContext(null, Hand.MAIN_HAND, new BlockHitResult(
+        BlockHitResult hitResult = new BlockHitResult(
                 Vec3d.ofBottomCenter(target),
                 Direction.DOWN,
                 target,
                 true
-        ));
+        );
 
         ActionResult result = InventoryUtils.stream(villager.getInventory())
-            .filter(stack -> !stack.isEmpty() && stack.getItem() instanceof BlockItem && stack.isIn(TagsMCA.Items.VILLAGER_PLANTABLE))
-            .map(stack -> stack.useOnBlock(context))
-            .filter(ActionResult::isAccepted)
-            .findFirst()
-            .orElse(ActionResult.FAIL);
+                .filter(stack -> !stack.isEmpty() && stack.getItem() instanceof BlockItem && stack.isIn(TagsMCA.Items.VILLAGER_PLANTABLE))
+                .map(stack -> stack.useOnBlock(instantiateItemUsageContext(world, null, Hand.MAIN_HAND, stack, hitResult)))
+                .filter(ActionResult::isAccepted)
+                .findFirst()
+                .orElse(ActionResult.FAIL);
 
         if (result.isAccepted()) {
             if (result.shouldSwingHand()) {
